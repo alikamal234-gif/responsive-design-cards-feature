@@ -12,33 +12,131 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+    section{
+      width: 100%;
+  
+    }
+    .box__title{
+      width: 100%;
+      text-align: center;
+    }
+    .premier--title{
+      color: hsl(212, 6%, 44%);
+    }
+    .second--title{
+      color: hsl(234, 12%, 34%);
+    }
+    .box__title p{
+      color: hsl(212, 6%, 44%);
+    }
+    .box__carts{
+      width: 80%;
+      height: 40rem;
+      border: none;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .box_cart{
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border: none;
+    }
+    .cart{
+      width: 90%;
+      height: 30%;
+      padding: 10px;
+      border-top: 3px solid hsl(0, 78%, 62%);
+    }
+    .box--image{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .box--image img{
+      padding-right: 10px;
+    }
+    .cart p{
+      color: hsl(212, 6%, 44%);
+    }
+    .cart h2{
+      color: hsl(234, 12%, 34%);
+    }
+    
+    @media (max-width: 375px){
+      
+      .box__carts{
+        grid-template-columns: 1fr;
+      }
+      .cart{
+        height: 15rem;
+        width: 100%;
+        
+      }
+      .box_cart{
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
+  <main>
+    <section class="box__title">
+      <h2 class="premier--title"> Reliable, efficient delivery</h2>
+      <h2 class="second--title">Powered by Technology</h2>
+      <p>Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful</p>
+    </section>
+    <section class="box__carts">
+      <div class="box_cart">
+        <div class="cart1 cart">
+          <h2>Supervisor</h2>
+          <p> Monitors activity to identify project roadblocks</p>
+          <div class="box--image">
+            <img src="images/icon-calculator.svg" alt="">
+          </div>
+          
+        </div>
+      </div>
+      <div class="box_cart box--card2">
+        <div class="cart2 cart">
+          <h2>Supervisor</h2>
+          <p>Scans our talent network to create the optimal team for your project</p>
+          <div class="box--image">
+            <img src="images/icon-supervisor.svg" alt="">
+          </div>
+          
+        </div>
+        <div class="cart2 cart">
+          <h2>Supervisor</h2>
+          <p> Monitors activity to identify project roadblocks</p>
+          <div class="box--image">
+            <img src="images/icon-karma.svg" alt="">
+          </div>
+          
+        </div>
+      </div>
+      <div class="box_cart">
+        <div class="cart3 cart">
+          <h2>Supervisor</h2>
+          <p> Monitors activity to identify project roadblocks</p>
+          <div class="box--image">
+            <img src="images/icon-team-builder.svg" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+ 
   
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>
